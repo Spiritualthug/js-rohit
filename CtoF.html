@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    ntent="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
@@ -13,20 +14,23 @@
     function cToF(celsius) { //create function
 
         let cTemp = celsius; 
-        let cToF = cTemp * 9 / 5 + 32; //(0°C × 9/5) + 32 = 32°F
+        let finalTemperature = cTemp * 9 / 5 + 32; //(0°C × 9/5) + 32 = 32°F
 
-        console.log(cToF + "" + 'is the Temperature in Celcius');
-        return
+        console.log(finalTemperature + "" + 'is the Temperature in Celcius');
+        return finalTemperature
     }
 
     function fToC(fahrenheit) {
 
         var fTemp = fahrenheit;
-        var fToC = (fTemp - 32) * 5 / 9; //(32°F − 32) × 5/9 = 0°C
+        var finalTemperature = (fTemp - 32) * 5 / 9; //(32°F − 32) × 5/9 = 0°C
 
-        console.log(fToC + " " + "is the Temperature in Farheheit");
+        console.log(finalTemperature + " " + "is the Temperature in Farheheit");
+        return finalTemperature;
     } 
 
+
+        // var celciusToF = cToF(37.5)
     </script>
 </body>
 </html>
