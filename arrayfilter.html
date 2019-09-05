@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+      
+
+    //prompt ask city names
+    //     var city = prompt("Enter a City Name")
+
+    // //check whether the city name are of charcter more than 5 characters
+    //     // for(i = 0; i < city.length; i++){ 
+    //         if(city.length <= 6 ){ //check the names character is less than 6 charcaters
+    //             console.log(city + "" + 'enter city name more than of characters');
+    //         }
+    //         else if(city.length > 7){
+    //             console.log(city + "" +"is the Correct City name of more than 6 characters");
+    //         }
+    //   ;  // }
+    
+
+    var cities = ["Kathmandu", "Pokhara", "Bhaktapur", "Palpa", "Chitwon", "Biratnagar", "Nepalgunj", "Dhankuta"];
+
+    var filteredCities = cities.filter(function(value, index){ 
+        if(value.length >= 6 ){
+            return true;
+        }
+    })
+
+
+    var country = ['Nepal','India','China','Malaysia','Thailand'] //make an array of countries
+    var capital = ['Kathmandu', 'Delhi', 'Beijig', 'kualalampur', 'Bangkok' ] // make an array of capitals
+
+    var mappedCountries = country.map(function(value, index){ 
+
+        return value + " - " + capital[index];  //join the array of capitals to their respective countries 
+    })  
+   
+    //join array of number 1's and alphabets one's
+
+    var numericals = [0,1,2,3,4,5,6,7,8,9,]
+    var alphabets =['one','two','three','four','five','six','seven','eight','nine']
+
+    var mappedvariables = numericals.map(function(value,index){
+        return value + "is the value of" + alphabets[index];
+    })
+
+    // += 
+    // var test = "hello"
+
+    // test += "world"
+    // test = test + "world"
+
+    //test= helloworld
+
+    // #OBJEct
+    var object = {  //making an object
+        name: "Test",
+        fullName: "HEllo world"
+    }
+
+    //We can assign new keys to the object 
+
+    object.test = 100000;
+
+
+    //We can get the datas of the object by
+    console.log(object.name, object.fullName)
+
+    //The object
+    console.log(object)
+
+
+    </script>
+</body>
+</html>
